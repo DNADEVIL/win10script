@@ -30,9 +30,9 @@ $tweaks = @(
 	"RequireAdmin",
   "CreateRestorePoint",
 	### External Program Setup
-	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-	"Install7Zip",
-	"InstallNotepadplusplus",
+	# "InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+	# "Install7Zip",
+	# "InstallNotepadplusplus",
 
 	### Windows Apps
 	"DebloatAll",
@@ -155,14 +155,14 @@ $tweaks = @(
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	# "DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
+	# "InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
 	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
-	"InstallPDFPrinter"		# "UninstallPDFPrinter",
+	# "InstallPDFPrinter"		# "UninstallPDFPrinter",
 	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	# "RemoveFaxPrinter",             # "AddFaxPrinter",
 
@@ -185,40 +185,40 @@ $tweaks = @(
 # Recommended Titus Programs
 #########
 
-#Function InstallTitusProgs {
-	#Write-Output "Installing Chocolatey"
-	#Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-	#choco install chocolatey-core.extension -y
-	#Write-Output "Running O&O Shutup with Recommended Settings"
-	#Import-Module BitsTransfer
-	#Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
-	#Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
-	#./OOSU10.exe ooshutup10.cfg /quiet
+# Function InstallTitusProgs {
+	# Write-Output "Installing Chocolatey"
+	# Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+	# choco install chocolatey-core.extension -y
+	# Write-Output "Running O&O Shutup with Recommended Settings"
+	# Import-Module BitsTransfer
+	# Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+	 #Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
+	# ./OOSU10.exe ooshutup10.cfg /quiet
 }
 
-#Function InstallAdobe {
-	#Write-Output "Installing Adobe Acrobat Reader"
-	#choco install adobereader -y
+# Function InstallAdobe {
+	# Write-Output "Installing Adobe Acrobat Reader"
+	# choco install adobereader -y
 }
 
-#Function InstallJava {
-	#Write-Output "Installing Java"
-	#choco install jre8 -y
+# Function InstallJava {
+	# Write-Output "Installing Java"
+	# choco install jre8 -y
 }
 
-#Function Install7Zip {
-	#Write-Output "Installing 7-Zip"
-	#choco install 7zip -y
+# Function Install7Zip {
+	# Write-Output "Installing 7-Zip"
+	# choco install 7zip -y
 }
 
-#Function InstallNotepadplusplus {
-	#Write-Output "Installing Notepad++"
-	#choco install notepadplusplus -y
+# Function InstallNotepadplusplus {
+	# Write-Output "Installing Notepad++"
+	# choco install notepadplusplus -y
 }
 
-#Function InstallMediaPlayerClassic {
-	#Write-Output "Installing Media Player Classic (VLC Alternative)"
-	#choco install mpc-hc -y
+# Function InstallMediaPlayerClassic {
+	# Write-Output "Installing Media Player Classic (VLC Alternative)"
+	# choco install mpc-hc -y
 }
 
 ##########
